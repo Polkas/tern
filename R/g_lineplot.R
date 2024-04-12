@@ -281,7 +281,7 @@ g_lineplot <- function(df,
   ############################### |
   # ---- Build plot object. ----
   ############################### |
-  p <- ggplot2::ggplot(
+  p <- ggplot(
     data = df_stats,
     mapping = ggplot2::aes(
       x = .data[[x]], y = .data[[mid]],
@@ -386,7 +386,7 @@ g_lineplot <- function(df,
         names_ptypes = list(stat = factor(levels = stats_lev))
       )
 
-    tbl <- ggplot2::ggplot(
+    tbl <- ggplot(
       df_stats_table,
       ggplot2::aes(x = .data[[x]], y = .data[["stat"]], label = .data[["value"]])
     ) +

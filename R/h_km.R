@@ -395,7 +395,7 @@ h_ggkm <- function(data,
   }
 
   gg <- {
-    ggplot2::ggplot(
+    ggplot(
       data = data,
       mapping = ggplot2::aes(
         x = .data[["time"]],

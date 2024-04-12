@@ -30,7 +30,7 @@ This function was adapted from \verb{DescTools/versions/0.99.35/source}
 \examples{
 stat_median_ci(sample(10), gg_helper = FALSE)
 
-p <- ggplot2::ggplot(mtcars, ggplot2::aes(cyl, mpg)) +
+p <- ggplot(mtcars, ggplot2::aes(cyl, mpg)) +
   ggplot2::geom_point()
 p + ggplot2::stat_summary(
   fun.data = stat_median_ci,

@@ -38,7 +38,7 @@ geometric mean. It can be used as a \code{ggplot} helper function for plotting.
 \examples{
 stat_mean_ci(sample(10), gg_helper = FALSE)
 
-p <- ggplot2::ggplot(mtcars, ggplot2::aes(cyl, mpg)) +
+p <- ggplot(mtcars, ggplot2::aes(cyl, mpg)) +
   ggplot2::geom_point()
 
 p + ggplot2::stat_summary(

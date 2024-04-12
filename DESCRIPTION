@@ -127,6 +127,7 @@ Collate:
     'g_lineplot.R'
     'g_step.R'
     'g_waterfall.R'
+    'ggcall.R'
     'h_adsl_adlb_merge_using_worst_flag.R'
     'h_biomarkers_subgroups.R'
     'h_cox_regression.R'

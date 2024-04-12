@@ -92,7 +92,7 @@ h_g_ipp <- function(df,
   checkmate::assert_flag(add_baseline_hline)
   checkmate::assert_character(col, null.ok = TRUE)
 
-  p <- ggplot2::ggplot(
+  p <- ggplot(
     data = df,
     mapping = ggplot2::aes(
       x = .data[[xvar]],

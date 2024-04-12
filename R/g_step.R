@@ -97,7 +97,7 @@ g_step <- function(df,
   # Set legend names. To be modified also at call level
   legend_names <- c("Estimate", "CI 95%")
 
-  p <- ggplot2::ggplot(df, ggplot2::aes(x = .data[["x"]], y = .data[["y"]]))
+  p <- ggplot(df, ggplot2::aes(x = .data[["x"]], y = .data[["y"]]))
 
   if (!is.null(col)) {
     p <- p +
